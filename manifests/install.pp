@@ -10,7 +10,7 @@ class nginx::install {
 
   package {["nginx"]:
     ensure  => installed,
-    require => Exec["apt-update-apache"]
+    require => Exec["apt-update-nginx"]
   }
 
 }
